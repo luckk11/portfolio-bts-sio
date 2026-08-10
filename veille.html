@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille technologique — Luc Zhang, BTS SIO option SLAM</title>
+<meta name="description" content="Comment l'intelligence artificielle exploite nos données pour orienter nos choix. Sujet de veille, méthode, sources et collection Pearltrees.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" id="progress"></div>
+
+<!-- #header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <nav class="navpill" id="nav" aria-label="Navigation principale">
+      <a class="logo" href="index.html">LZ</a>
+      <a class="nl" href="index.html">Accueil</a>
+      <a class="nl" href="profil.html">Profil</a>
+      <a class="nl" href="bts-sio.html">BTS SIO</a>
+      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="stage-1.html">Stage</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="stage-1.html">1<sup>re</sup> année<span>ZENG Expertise — effectué</span></a>
+          <a href="stage-2.html">2<sup>e</sup> année<span>À venir</span></a>
+        </div>
+      </div>
+      <a class="nl" href="projets.html">Projets</a>
+      <a class="nl" href="veille.html" aria-current="page">Veille</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <!-- version anglaise à produire : index-en.html -->
+      <a class="icon-btn" href="index-en.html" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="icon-btn" id="theme" aria-label="Basculer le thème sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a class="btn btn-deep" href="contact.html">Contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /#header -->
+
+<main id="main">
+
+<!-- ============ EN-TÊTE ============ -->
+<section class="pagehead">
+  <div class="wrap">
+    <p class="mono bread rv"><a href="index.html">Accueil</a> / Veille technologique</p>
+    <h1 class="rv">Veille technologique</h1>
+    <p class="sub rv">Comment l'intelligence artificielle utilise nos données pour choisir à notre place, sans que nous en ayons conscience.</p>
+    <div class="meta rv">
+      <span>IA et données personnelles</span>
+      <span>Collection publique sur Pearltrees</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 · LE SUJET ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(01) — Le sujet</span>
+    <h2>Nos données valent de l'or,<br>et nos décisions les nourrissent.</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">Chaque recherche, chaque achat, chaque seconde passée sur un contenu devient une donnée. Ces traces alimentent des modèles qui, en retour, décident de ce qui nous sera montré — et donc, en partie, de ce que nous choisirons. La question suivie ici est celle de ce cycle : que collecte-t-on réellement, comment un algorithme s'en sert pour orienter un choix, et où passe la frontière avec la manipulation. <span class="todo">à reformuler avec tes mots</span></p>
+
+      <div class="note rv" style="margin-top:26px">
+        <b>Pourquoi ce sujet.</b> Il croise trois choses déjà présentes dans le parcours : un projet universitaire de recommandation développé en Python, un stage passé à construire une architecture RAG qui exploite des données pour produire une analyse, et le MOOC de l'ANSSI sur le RGPD. La veille ne s'ajoute pas au reste, elle le prolonge.
+      </div>
+    </div>
+
+    <aside class="card idcard rv">
+      <span class="mono" style="color:var(--sec)">Repères</span>
+      <dl style="margin-top:18px">
+        <dt>Intitulé</dt><dd>IA et données personnelles</dd>
+        <dt>Suivi depuis</dt><dd><span class="todo">mois / année</span></dd>
+        <dt>Classement</dt><dd>Pearltrees, par axe</dd>
+        <dt>Accès</dt><dd>Public</dd>
+      </dl>
+      <div style="margin-top:22px;padding-top:20px;border-top:1px solid var(--line)">
+        <a class="link" href="https://www.pearltrees.com/lucque" rel="noopener">Ouvrir la collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 02 · LES AXES ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(02) — Les axes</span>
+    <h2>Trois angles d'attaque.</h2>
+  </div>
+
+  <div class="grid-3">
+    <article class="axe rv">
+      <img src="assets/img/veille-1.svg" alt="Des traces numériques dispersées convergent vers une base de données" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 01</span>
+        <h3>Collecte et traçage</h3>
+        <p>Ce qui est réellement capté, par qui, et sous quel prétexte.</p>
+      </div>
+    </article>
+    <article class="axe rv">
+      <img src="assets/img/veille-2.svg" alt="Une carte mise en avant par un algorithme oriente le choix de l'utilisateur" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 02</span>
+        <h3>Recommandation et influence</h3>
+        <p>Comment une suggestion devient une orientation.</p>
+      </div>
+    </article>
+    <article class="axe rv">
+      <img src="assets/img/veille-3.svg" alt="Un bouclier protège un document de données personnelles" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 03</span>
+        <h3>Cadre juridique</h3>
+        <p>RGPD, consentement, et ce que le droit ne couvre pas encore.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 03 · LA COLLECTION ============ -->
+<section class="sec band">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap">
+    <div class="rv" style="max-width:62ch">
+      <span class="mono" style="display:block;margin-bottom:16px">(03) — La collection</span>
+      <h2 style="font-size:clamp(28px,4vw,46px)">Tout est classé sur Pearltrees.</h2>
+      <p class="lead" style="margin-top:16px;color:rgba(255,255,255,.82)">Les ressources retenues y sont rangées par axe, avec le lien d'origine et sa date. La collection est publique et se met à jour au fil des semaines.</p>
+    </div>
+    <a class="btn btn-ghost rv" href="https://www.pearltrees.com/lucque" rel="noopener">Consulter la collection
+      <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ============ 04 · LES SYNTHÈSES ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(04) — Les synthèses</span>
+    <h2>Ce que j'en retiens.</h2>
+    <p class="lead" style="margin-top:16px">Lire ne suffit pas : la veille se prouve par ce qu'on en écrit. Un texte court par axe.</p>
+  </div>
+
+  <div class="prj-grid">
+    <article class="prj rv" style="border-style:dashed">
+      <div class="top">
+        <span class="tag tag-commun">Axe 01</span>
+        <span class="badge badge-wait">À écrire</span>
+      </div>
+      <h3>Le traçage invisible</h3>
+      <p>Ce qu'un site collecte pendant une visite ordinaire, au-delà du bandeau de cookies.</p>
+      <div class="foot"><span>Une page</span></div>
+    </article>
+
+    <article class="prj rv" style="border-style:dashed">
+      <div class="top">
+        <span class="tag tag-commun">Axe 02</span>
+        <span class="badge badge-wait">À écrire</span>
+      </div>
+      <h3>Comment fonctionne une recommandation</h3>
+      <p>Le mécanisme expliqué de l'intérieur, par quelqu'un qui a développé un moteur de recommandation et une chaîne RAG.</p>
+      <div class="foot"><span>Une page</span></div>
+    </article>
+
+    <article class="prj rv" style="border-style:dashed">
+      <div class="top">
+        <span class="tag tag-commun">Axe 03</span>
+        <span class="badge badge-wait">À écrire</span>
+      </div>
+      <h3>Ce que le RGPD ne couvre pas</h3>
+      <p>Les angles morts de la réglementation face aux modèles entraînés sur des données déjà collectées.</p>
+      <div class="foot"><span>Une page</span></div>
+    </article>
+  </div>
+
+  <div class="rv" style="margin-top:28px">
+    <a class="link" href="competences.html">La compétence du référentiel que cette veille alimente
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="wrap" style="padding-bottom:clamp(40px,6vw,80px)">
+  <div class="cta rv">
+    <span class="mono" style="color:var(--pale)">Contact</span>
+    <h2 style="margin-top:20px">Un projet <em>data</em> ?</h2>
+    <a class="mail" href="mailto:zhg.luc2909@gmail.com">zhg.luc2909@gmail.com</a>
+    <div style="margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="https://www.pearltrees.com/lucque" rel="noopener">Ma collection Pearltrees
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <a class="btn btn-ghost" href="stage-1.html">Mon stage sur le RAG
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- #footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--deep)">LZ</span>
+        <p style="font-size:15.5px;color:var(--sec);margin-top:6px">Luc Zhang — BTS SIO option SLAM<br>Rosny-sous-Bois, Île-de-France</p>
+      </div>
+      <nav aria-label="Pages du site">
+        <a href="profil.html">Profil</a>
+        <a href="bts-sio.html">BTS SIO</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stage-1.html">Stage</a>
+        <a href="projets.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/luczhang8/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/luckk11" rel="noopener">GitHub</a>
+        <a href="https://www.pearltrees.com/lucque" rel="noopener">Pearltrees</a>
+        <a href="mailto:zhg.luc2909@gmail.com">E-mail</a>
+      </nav>
+    </div>
+    <div class="ft-in ft-bot">
+      <span>Dernière mise à jour : août 2026 — site écrit à la main en HTML, CSS et JavaScript, hébergé sur GitHub Pages</span>
+      <nav aria-label="Pages annexes">
+        <a href="a-propos.html">À propos du site</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /#footer -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

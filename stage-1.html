@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stage de 1re année chez ZENG Expertise — Luc Zhang</title>
+<meta name="description" content="Cinq semaines chez ZENG Expertise, cabinet de Data Engineering : conception d'un schéma PostgreSQL, pipeline ETL en Python et architecture RAG pour un moteur d'analyse de données crypto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" id="progress"></div>
+
+<!-- #header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <nav class="navpill" id="nav" aria-label="Navigation principale">
+      <a class="logo" href="index.html">LZ</a>
+      <a class="nl" href="index.html">Accueil</a>
+      <a class="nl" href="profil.html">Profil</a>
+      <a class="nl" href="bts-sio.html">BTS SIO</a>
+      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="stage-1.html" aria-current="page">Stage</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="stage-1.html">1<sup>re</sup> année<span>ZENG Expertise — effectué</span></a>
+          <a href="stage-2.html">2<sup>e</sup> année<span>À venir</span></a>
+        </div>
+      </div>
+      <a class="nl" href="projets.html">Projets</a>
+      <a class="nl" href="veille.html">Veille</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <!-- version anglaise à produire : index-en.html -->
+      <a class="icon-btn" href="index-en.html" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="icon-btn" id="theme" aria-label="Basculer le thème sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a class="btn btn-deep" href="contact.html">Contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /#header -->
+
+<main id="main">
+
+<!-- ============ EN-TÊTE DE PAGE ============ -->
+<section class="pagehead">
+  <div class="wrap">
+    <p class="mono bread rv"><a href="index.html">Accueil</a> / Stage de 1<sup>re</sup> année</p>
+    <h1 class="rv">ZENG Expertise</h1>
+    <p class="sub rv">Cinq semaines dans un cabinet de Data Engineering, à construire la brique back-end et IA d'un moteur d'analyse de données crypto.</p>
+    <div class="meta rv">
+      <span>4 mai → 5 juin 2026</span>
+      <span>200 heures · 5 semaines</span>
+      <span>Lyon 6<sup>e</sup> — en distanciel</span>
+      <span>Assistant développeur data &amp; back-end</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 · L'ENTREPRISE ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(01) — L'entreprise</span>
+    <h2>Une structure indépendante,<br>un accompagnement direct.</h2>
+  </div>
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">ZENG Expertise est un cabinet de conseil fondé en 2021, spécialisé dans l'ingénierie des données et l'intelligence artificielle. Son activité couvre la conception d'architectures de bases de données, le développement de solutions d'analyse et l'intégration de modèles d'IA — principalement pour des acteurs de la banque et de la finance, où le volume de données et la performance des systèmes sont des enjeux quotidiens.</p>
+      <p class="lead" style="margin-top:18px">La structure fonctionne intégralement en télétravail. Pendant la période de stage, l'organisation se résumait à une collaboration entre le dirigeant et le stagiaire. Cet effectif réduit a deux conséquences directes : un suivi quotidien par un professionnel expérimenté, et la possibilité de participer à toutes les étapes du projet plutôt qu'à une seule.</p>
+      <div class="note rv" style="margin-top:26px">
+        <b>Le contexte concurrentiel.</b> Sur ce marché, la concurrence est constituée des ESN et des cabinets de conseil spécialisés dans la donnée et l'IA. La différenciation d'une petite structure passe par l'expertise pointue et la proximité avec le client, pas par le volume.
+      </div>
+    </div>
+    <aside class="card idcard rv">
+      <div style="background:#000;border-radius:var(--r);padding:26px;display:grid;place-items:center;margin-bottom:22px">
+        <img src="assets/img/logo-zeng.png" alt="Logo de ZENG Expertise" width="132">
+      </div>
+      <span class="mono" style="color:var(--sec)">Fiche d'identité</span>
+      <dl style="margin-top:16px">
+        <dt>Raison sociale</dt><dd>ZENG Expertise</dd>
+        <dt>Forme juridique</dt><dd>SASU</dd>
+        <dt>Création</dt><dd>2021</dd>
+        <dt>Dirigeant</dt><dd>David Zeng, consultant data senior</dd>
+        <dt>Siège</dt><dd>Lyon 6<sup>e</sup></dd>
+        <dt>Secteur</dt><dd>Ingénierie des données et IA</dd>
+        <dt>Clientèle</dt><dd>Banque et finance</dd>
+        <dt>Organisation</dt><dd>Télétravail intégral</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 02 · LE PROJET ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(02) — Le projet</span>
+    <h2>Une preuve de concept<br>destinée à devenir un service.</h2>
+    <p class="lead" style="margin-top:16px">L'objectif : développer un outil capable d'analyser des données liées aux cryptomonnaies à partir d'informations historiques et d'articles de presse, pour en faire à terme une offre proposée aux clients du cabinet. Le cœur du système est une architecture <strong>RAG</strong> — <em>Retrieval-Augmented Generation</em> : plutôt que d'interroger un modèle de langage à l'aveugle, on récupère d'abord le contexte pertinent dans une base vectorielle, puis on le fournit au modèle pour produire une analyse ancrée dans des sources réelles.</p>
+  </div>
+
+  <div class="note rv" style="margin-bottom:26px">
+    <b>Un recentrage assumé.</b> En cours de stage, le tuteur a demandé d'accentuer la part IA et RAG des missions, pour en faire la spécialité de terrain de cette période. Les tâches suivantes en portent la trace : la moitié d'entre elles touchent directement à la chaîne de récupération augmentée.
+  </div>
+
+  <div class="gal rv">
+    <figure>
+      <img src="assets/img/crypto-dashboard.jpg" alt="Tableau de bord affichant le cours du Bitcoin sur 24 heures avec une zone d'anomalie signalée" loading="lazy">
+      <figcaption>Suivi du cours en bougies de 5 minutes, avec repérage visuel de l'épisode d'anomalie en cours.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/img/crypto-detector.jpg" alt="Détecteur d'anomalies, activité de marché et historique des épisodes détectés" loading="lazy">
+      <figcaption>Détecteur, indicateurs de marché, fil d'actualité et historique rejouable des épisodes.</figcaption>
+    </figure>
+  </div>
+  <p class="lead rv" style="margin-top:18px;font-size:15.5px">Le projet s'est poursuivi au-delà des cinq semaines de stage : le chantier était trop lourd pour tenir dans la durée impartie. <a class="link" href="https://github.com/Zeng-Zer/crypto-analyser" rel="noopener">Voir le dépôt<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a></p>
+</section>
+
+<!-- ============ 03 · ENVIRONNEMENT TECHNIQUE ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(03) — Environnement technique</span>
+    <h2>Les outils du quotidien.</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Langage</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">Python</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Logique métier, communication avec les API d'intelligence artificielle et scripts de traitement des données.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Données</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">PostgreSQL + pgvector</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Conception de la base, création des tables et des requêtes. L'extension pgvector permet de stocker dans la même base les données classiques et les embeddings vectoriels.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Développement</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">VS Code et Ghostty</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Environnement de développement et terminal, utilisés quotidiennement.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Infrastructure</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">Tailscale et Raspberry Pi</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Accès sécurisé aux ressources distantes de l'entreprise, et un Raspberry Pi en guise de serveur pour certains services du projet.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Versionnage</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">Git et GitHub</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Développement organisé par vagues, chaque évolution rattachée à un ticket précis pour assurer le suivi des tâches.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--deep)">Langue de travail</span>
+      <h3 style="font-size:19px;margin:14px 0 8px">Anglais technique</h3>
+      <p style="font-size:15.5px;color:var(--sec)">Lecture et application de documentations complexes en anglais pour intégrer de nouvelles API.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · MÉTHODE ============ -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="mono" style="display:block;margin-bottom:18px">(04) — Méthode de travail</span>
+      <h2>Les règles d'une équipe,<br>appliquées dès le premier jour.</h2>
+    </div>
+    <div class="timeline" style="grid-template-columns:repeat(4,1fr)">
+      <div class="tl rv"><em>Chaque matin</em><b>Daily meeting</b><span>Point sur l'avancement, les difficultés et les objectifs du jour.</span></div>
+      <div class="tl rv"><em>Qualité du code</em><b>Responsabilité unique</b><span>Chaque fonction remplit un rôle et un seul, pour rester lisible et réutilisable.</span></div>
+      <div class="tl rv"><em>Sécurité</em><b>Clés en fichiers .env</b><span>Aucun secret dans le code source, aucune clé d'API versionnée.</span></div>
+      <div class="tl rv"><em>Transmission</em><b>Documentation systématique</b><span>Guide utilisateur et documentation technique pour chaque fonctionnalité livrée.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · MISSIONS ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(05) — Missions réalisées</span>
+    <h2>Six étapes, du fichier brut<br>à la recherche sémantique.</h2>
+  </div>
+  <div class="steps">
+    <article class="step rv">
+      <span class="n">01</span>
+      <div>
+        <h3>Exploration des données et conception du schéma SQL</h3>
+        <p>Avant de modéliser quoi que ce soit, il fallait comprendre la donnée. Un script Python a été développé pour parcourir un échantillon des fichiers JSON contenant les articles et recenser l'ensemble des clés présentes. Cette phase d'exploration a conditionné toute la structure de la base : on ne conçoit pas un schéma sur une intuition, mais sur un inventaire.</p>
+        <div style="margin-top:14px"><span class="chip">Python</span><span class="chip">JSON</span><span class="chip">PostgreSQL</span></div>
+      </div>
+    </article>
+    <article class="step rv">
+      <span class="n">02</span>
+      <div>
+        <h3>Développement du pipeline d'extraction ETL</h3>
+        <p>Automatisation de la chaîne extraction — transformation — chargement : récupération des données de marché et des articles, nettoyage, mise au format, puis insertion en base. C'est la partie qui alimente tout le reste du système.</p>
+        <div style="margin-top:14px"><span class="chip">Python</span><span class="chip">ETL</span><span class="chip">API</span></div>
+      </div>
+    </article>
+    <article class="step rv">
+      <span class="n">03</span>
+      <div>
+        <h3>Intégration de l'IA : génération des embeddings</h3>
+        <p>Chaque texte est converti en vecteur numérique par une API d'intelligence artificielle, puis stocké avec pgvector. Ces vecteurs sont ce qui rend possible la recherche par le sens plutôt que par le mot exact — la brique centrale d'une architecture RAG.</p>
+        <div style="margin-top:14px"><span class="chip">API d'IA</span><span class="chip">Embeddings</span><span class="chip">pgvector</span><span class="chip">RAG</span></div>
+      </div>
+    </article>
+    <article class="step rv">
+      <span class="n">04</span>
+      <div>
+        <h3>Architecture et optimisation des index SQL</h3>
+        <p>Une base qui répond juste mais lentement ne sert à rien en production. Travail sur la structure des index pour réduire les temps de réponse des requêtes d'exploitation, en particulier sur les recherches vectorielles.</p>
+        <div style="margin-top:14px"><span class="chip">SQL</span><span class="chip">Indexation</span><span class="chip">Performance</span></div>
+      </div>
+    </article>
+    <article class="step rv">
+      <span class="n">05</span>
+      <div>
+        <h3>Interface de démonstration en ligne de commande</h3>
+        <p>Une interface CLI pour manipuler le moteur sans passer par le code : indispensable pour démontrer le fonctionnement du prototype et le faire tester par quelqu'un d'autre que son développeur.</p>
+        <div style="margin-top:14px"><span class="chip">Python</span><span class="chip">CLI</span></div>
+      </div>
+    </article>
+    <article class="step rv">
+      <span class="n">06</span>
+      <div>
+        <h3>Moteur de recherche hybride</h3>
+        <p>Aboutissement du projet : combiner la recherche classique par mots-clés et la recherche sémantique par vecteurs, afin de ne pas perdre les correspondances exactes tout en captant les formulations différentes. Les deux approches se compensent — c'est précisément l'intérêt d'une recherche hybride.</p>
+        <div style="margin-top:14px"><span class="chip">Recherche sémantique</span><span class="chip">SQL</span><span class="chip">pgvector</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 06 · COMPÉTENCES ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(06) — Référentiel</span>
+    <h2>Les compétences mobilisées.</h2>
+  </div>
+  <table class="tbl rv">
+    <caption>Compétences du référentiel BTS SIO travaillées pendant cette période, et la tâche qui les prouve.</caption>
+    <thead>
+      <tr><th scope="col">Compétence</th><th scope="col">Bloc</th><th scope="col">Ce qui la prouve ici</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-l="Compétence">Gérer les données</td>
+        <td data-l="Bloc" class="sec">Bloc 2 — SLAM</td>
+        <td data-l="Preuve" class="sec">Conception du schéma PostgreSQL, pipeline ETL, optimisation des index, stockage vectoriel</td>
+      </tr>
+      <tr>
+        <td data-l="Compétence">Concevoir et développer une solution applicative</td>
+        <td data-l="Bloc" class="sec">Bloc 2 — SLAM</td>
+        <td data-l="Preuve" class="sec">Développement du moteur de recherche hybride et de l'interface de démonstration</td>
+      </tr>
+      <tr>
+        <td data-l="Compétence">Assurer la maintenance corrective ou évolutive</td>
+        <td data-l="Bloc" class="sec">Bloc 2 — SLAM</td>
+        <td data-l="Preuve" class="sec">Poursuite et évolution du projet après la fin du stage</td>
+      </tr>
+      <tr>
+        <td data-l="Compétence">Travailler en mode projet</td>
+        <td data-l="Bloc" class="sec">Bloc 1 — Commun</td>
+        <td data-l="Preuve" class="sec">Développement par vagues, un ticket par évolution, point quotidien avec le tuteur</td>
+      </tr>
+      <tr>
+        <td data-l="Compétence">Mettre à disposition des utilisateurs un service informatique</td>
+        <td data-l="Bloc" class="sec">Bloc 1 — Commun</td>
+        <td data-l="Preuve" class="sec">Interface CLI de démonstration, guide utilisateur et documentation technique</td>
+      </tr>
+      <tr>
+        <td data-l="Compétence">Organiser son développement professionnel</td>
+        <td data-l="Bloc" class="sec">Bloc 1 — Commun</td>
+        <td data-l="Preuve" class="sec">Adoption des bonnes pratiques de l'équipe, lecture de documentations en anglais, veille associée</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="lead rv" style="margin-top:20px;font-size:15.5px">Le détail des niveaux et la matrice complète se trouvent sur la <a class="link" href="competences.html">page Compétences<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a></p>
+</section>
+
+<!-- ============ 07 · BILAN ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(07) — Bilan</span>
+    <h2>Ce que ces cinq semaines<br>ont réellement changé.</h2>
+  </div>
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">Le principal apport n'est pas une technologie en particulier, mais un standard d'exigence. Qualité du code, optimisation des performances, respect des bonnes pratiques, documentation systématique : autant de réflexes qu'un exercice scolaire n'impose jamais vraiment, et qu'une structure professionnelle rend obligatoires dès la première ligne écrite.</p>
+      <p class="lead" style="margin-top:18px">Le second apport est une confirmation. L'objectif professionnel — Data Analyst puis Data Scientist en intelligence artificielle — reposait avant ce stage sur une intuition. Il repose désormais sur une expérience concrète du métier : lire une documentation d'API en anglais un lundi matin et voir la fonctionnalité tourner le mercredi.</p>
+      <p class="lead" style="margin-top:18px">Point d'amélioration identifié : <span class="todo">à compléter — une difficulté précise rencontrée et la façon dont elle a été résolue</span>. C'est la question que le jury pose systématiquement.</p>
+    </div>
+    <div class="card rv">
+      <span class="mono" style="color:var(--sec)">Documents</span>
+      <p style="font-size:15px;color:var(--sec);margin-top:12px">Le rapport détaille chacune des tâches, avec les extraits de code et les schémas correspondants.</p>
+      <div class="docs" style="border:0;padding-top:18px;margin-top:0">
+        <a class="doc" href="assets/docs/rapport-de-stage.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:17px;height:17px"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          Rapport de stage (PDF)</a>
+        <a class="doc" href="assets/docs/attestation-de-stage.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:17px;height:17px"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          Attestation (PDF)</a>
+        <a class="doc" href="https://github.com/Zeng-Zer/crypto-analyser" rel="noopener">Dépôt du projet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · STAGE 2 ============ -->
+<section class="sec band">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap">
+    <div class="rv" style="max-width:62ch">
+      <span class="mono" style="display:block;margin-bottom:16px">(08) — Deuxième année</span>
+      <h2 style="font-size:clamp(28px,4vw,46px)">La suite se cherche maintenant.</h2>
+      <p class="lead" style="margin-top:16px">Stage ou alternance en développement back-end, données ou IA, dans le prolongement direct de cette première expérience. Période et durée : <span class="todo" style="background:rgba(255,255,255,.16);color:#fff">à préciser</span>.</p>
+    </div>
+    <a class="btn btn-ghost rv" href="contact.html">Échanger
+      <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</section>
+
+</main>
+
+<!-- #footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--deep)">LZ</span>
+        <p style="font-size:15.5px;color:var(--sec);margin-top:6px">Luc Zhang — BTS SIO option SLAM<br>Rosny-sous-Bois, Île-de-France</p>
+      </div>
+      <nav aria-label="Pages du site">
+        <a href="profil.html">Profil</a>
+        <a href="bts-sio.html">BTS SIO</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stage-1.html">Stage</a>
+        <a href="projets.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/luczhang8/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/luckk11" rel="noopener">GitHub</a>
+        <a href="https://www.pearltrees.com/lucque" rel="noopener">Pearltrees</a>
+        <a href="mailto:zhg.luc2909@gmail.com">E-mail</a>
+      </nav>
+    </div>
+    <div class="ft-in ft-bot">
+      <span>Dernière mise à jour : août 2026 — site écrit à la main en HTML, CSS et JavaScript, hébergé sur GitHub Pages</span>
+      <nav aria-label="Pages annexes">
+        <a href="a-propos.html">À propos du site</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /#footer -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Luc Zhang, BTS SIO option SLAM</title>
+<meta name="description" content="Proposer un stage ou une alternance, poser une question sur un projet. Formulaire de contact et coordonnées de Luc Zhang, étudiant en BTS SIO option SLAM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" id="progress"></div>
+
+<!-- #header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <nav class="navpill" id="nav" aria-label="Navigation principale">
+      <a class="logo" href="index.html">LZ</a>
+      <a class="nl" href="index.html">Accueil</a>
+      <a class="nl" href="profil.html">Profil</a>
+      <a class="nl" href="bts-sio.html">BTS SIO</a>
+      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="stage-1.html">Stage</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="stage-1.html">1<sup>re</sup> année<span>ZENG Expertise — effectué</span></a>
+          <a href="stage-2.html">2<sup>e</sup> année<span>À venir</span></a>
+        </div>
+      </div>
+      <a class="nl" href="projets.html">Projets</a>
+      <a class="nl" href="veille.html">Veille</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <!-- version anglaise à produire : index-en.html -->
+      <a class="icon-btn" href="index-en.html" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="icon-btn" id="theme" aria-label="Basculer le thème sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a class="btn btn-deep" href="contact.html">Contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /#header -->
+
+<main id="main">
+
+<!-- ============ EN-TÊTE ============ -->
+<section class="pagehead">
+  <div class="wrap">
+    <p class="mono bread rv"><a href="index.html">Accueil</a> / Contact</p>
+    <h1 class="rv">Contact</h1>
+    <p class="sub rv">Une proposition de stage ou d'alternance, une question sur un projet, ou simplement un échange : le formulaire ci-dessous arrive directement dans ma boîte.</p>
+    <div class="meta rv">
+      <span>Réponse sous 48 heures</span>
+      <span>Paris et Île-de-France</span>
+      <span>Distanciel possible</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 · FORMULAIRE ============ -->
+<section class="sec wrap">
+  <div class="contact-grid">
+
+    <div class="card rv" style="padding:clamp(24px,3vw,38px)">
+      <span class="mono eyebrow" style="margin-bottom:10px">(01) — Écrire</span>
+      <h2 style="font-size:clamp(24px,3vw,34px);margin-bottom:26px">Le formulaire.</h2>
+
+      <!--
+        Envoi du formulaire
+        -------------------
+        GitHub Pages n'héberge que des fichiers statiques : il ne peut pas envoyer d'e-mail
+        tout seul. Il faut donc un service externe.
+        1. Créer un compte gratuit sur https://formspree.io (ou https://web3forms.com)
+        2. Créer un formulaire, récupérer l'identifiant fourni
+        3. Remplacer VOTRE_ID ci-dessous par cet identifiant
+        Tant que VOTRE_ID est présent, le formulaire bascule automatiquement sur
+        l'ouverture du logiciel de messagerie avec le message pré-rempli.
+      -->
+      <form id="form-contact" data-endpoint="https://formspree.io/f/VOTRE_ID" novalidate>
+
+        <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+
+        <div class="form">
+          <div class="row2">
+            <div class="field">
+              <label for="nom">Nom et prénom <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="name">
+              <p class="field-err"></p>
+            </div>
+            <div class="field">
+              <label for="email">Adresse e-mail <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="vous@exemple.fr" required autocomplete="email">
+              <p class="field-err"></p>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="field">
+              <label for="organisation">Entreprise ou organisation</label>
+              <input type="text" id="organisation" name="organisation" placeholder="Facultatif" autocomplete="organization">
+              <p class="field-err"></p>
+            </div>
+            <div class="field">
+              <label for="objet">Objet <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="objet" name="objet" required>
+                  <option value="Proposition de stage">Proposition de stage</option>
+                  <option value="Proposition d'alternance">Proposition d'alternance</option>
+                  <option value="Question sur un projet">Question sur un projet</option>
+                  <option value="Autre">Autre</option>
+                </select>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+              <p class="field-err"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="Le contexte, le poste, la période envisagée…" required></textarea>
+            <p class="field-err"></p>
+          </div>
+
+          <!-- piège à robots : invisible, ne jamais remplir -->
+          <div class="hp" aria-hidden="true">
+            <label for="site">Ne pas remplir</label>
+            <input type="text" id="site" name="site" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="field">
+            <label class="check" for="rgpd">
+              <input type="checkbox" id="rgpd" name="rgpd" value="oui" required>
+              <span>J'accepte que mon nom et mon adresse e-mail soient utilisés pour répondre à ce message. Aucune autre exploitation n'en est faite. <a href="mentions-legales.html">En savoir plus</a> <span class="req">*</span></span>
+            </label>
+            <p class="field-err"></p>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-deep">
+              <span class="libelle">Envoyer le message</span>
+              <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12l16-8-7 16-2-6z"/></svg></span>
+            </button>
+            <span style="font-size:15px;color:var(--sec)">Les champs marqués <span style="color:var(--deep)">*</span> sont obligatoires.</span>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <div class="info-card rv">
+        <h3>Coordonnées</h3>
+        <div class="info-line"><span>E-mail</span><a href="mailto:zhg.luc2909@gmail.com">zhg.luc2909@gmail.com</a></div>
+        <!-- Retirer la ligne suivante si le numéro ne doit pas être public. -->
+        <div class="info-line"><span>Téléphone</span><a href="tel:+33619148683">06 19 14 86 83</a></div>
+        <div class="info-line"><span>Ville</span><b>Rosny-sous-Bois (93)</b></div>
+        <div class="info-line"><span>Mobilité</span><b>Paris et Île-de-France</b></div>
+        <div class="info-line"><span>Délai de réponse</span><b>48 heures</b></div>
+      </div>
+
+      <div class="info-card rv">
+        <h3>Ailleurs</h3>
+        <div class="reseaux">
+          <a class="reseau" href="https://www.linkedin.com/in/luczhang8/" rel="noopener">
+            <span>LinkedIn</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="reseau" href="https://github.com/luckk11" rel="noopener">
+            <span>GitHub</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+          <a class="reseau" href="https://www.pearltrees.com/lucque" rel="noopener">
+            <span>Pearltrees</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="info-card rv" style="background:var(--surf)">
+        <h3>Le CV</h3>
+        <p style="font-size:15.5px;color:var(--sec);margin-bottom:18px">Parcours, formation, compétences et expériences sur une page.</p>
+        <a class="btn btn-deep" href="assets/docs/cv-luc-zhang.pdf" download>Télécharger le PDF
+          <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v12M7 12l5 5 5-5M5 20h14"/></svg></span></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ 02 · CE QUI EST RECHERCHÉ ============ -->
+<section class="sec band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="mono" style="display:block;margin-bottom:18px">(02) — Avant d'écrire</span>
+      <h2>Ce qui est recherché.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="rv">
+        <span class="mono" style="color:var(--pale)">01</span>
+        <h3 style="font-size:21px;margin:12px 0 8px;color:#fff">Stage de 2<sup>e</sup> année</h3>
+        <p class="lead" style="color:rgba(255,255,255,.82);font-size:16px">Période fixée par l'ENC Bessières — <span class="todo" style="background:rgba(255,255,255,.16);color:#fff">à préciser</span>. Développement back-end, données ou IA.</p>
+      </div>
+      <div class="rv">
+        <span class="mono" style="color:var(--pale)">02</span>
+        <h3 style="font-size:21px;margin:12px 0 8px;color:#fff">Alternance</h3>
+        <p class="lead" style="color:rgba(255,255,255,.82);font-size:16px">La formation se déroule en initial, un passage en alternance reste possible pour la deuxième année.</p>
+      </div>
+      <div class="rv">
+        <span class="mono" style="color:var(--pale)">03</span>
+        <h3 style="font-size:21px;margin:12px 0 8px;color:#fff">Échanges</h3>
+        <p class="lead" style="color:rgba(255,255,255,.82);font-size:16px">Questions sur le Crypto Analyser, sur l'architecture RAG ou sur le parcours : les messages sont les bienvenus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- #footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--deep)">LZ</span>
+        <p style="font-size:15.5px;color:var(--sec);margin-top:6px">Luc Zhang — BTS SIO option SLAM<br>Rosny-sous-Bois, Île-de-France</p>
+      </div>
+      <nav aria-label="Pages du site">
+        <a href="profil.html">Profil</a>
+        <a href="bts-sio.html">BTS SIO</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stage-1.html">Stage</a>
+        <a href="projets.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/luczhang8/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/luckk11" rel="noopener">GitHub</a>
+        <a href="https://www.pearltrees.com/lucque" rel="noopener">Pearltrees</a>
+        <a href="mailto:zhg.luc2909@gmail.com">E-mail</a>
+      </nav>
+    </div>
+    <div class="ft-in ft-bot">
+      <span>Dernière mise à jour : août 2026 — site écrit à la main en HTML, CSS et JavaScript, hébergé sur GitHub Pages</span>
+      <nav aria-label="Pages annexes">
+        <a href="a-propos.html">À propos du site</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /#footer -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

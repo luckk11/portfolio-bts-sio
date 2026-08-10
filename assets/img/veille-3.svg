@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="t3">
+<title id="t3">Protection juridique des données personnelles</title>
+<rect width="640" height="400" fill="#F0F4FE"/>
+<path d="M320 44 l112 44 v92 c0 74 -48 116 -112 136 -64 -20 -112 -62 -112 -136 v-92 z" fill="#183FBA"/>
+<path d="M320 70 l88 34 v76 c0 60 -38 94 -88 112 -50 -18 -88 -52 -88 -112 v-76 z" fill="#FFFFFF"/>
+<rect x="268" y="126" width="104" height="130" rx="10" fill="#F0F4FE"/>
+<rect x="286" y="148" width="68" height="8" rx="4" fill="#AECBF5"/>
+<rect x="286" y="168" width="52" height="8" rx="4" fill="#D8E3FC"/>
+<rect x="286" y="188" width="60" height="8" rx="4" fill="#D8E3FC"/>
+<g stroke="#183FBA" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M288 224 l14 14 28 -30"/>
+</g>
+<g fill="#4776F5">
+<circle cx="128" cy="126" r="7"/><circle cx="118" cy="228" r="7"/><circle cx="150" cy="318" r="7"/>
+<circle cx="512" cy="126" r="7"/><circle cx="522" cy="228" r="7"/><circle cx="490" cy="318" r="7"/>
+</g>
+<g stroke="#D8E3FC" stroke-width="2" fill="none">
+<path d="M135 126 h58"/><path d="M125 228 h60"/><path d="M157 318 h44"/>
+<path d="M505 126 h-58"/><path d="M515 228 h-60"/><path d="M483 318 h-44"/>
+</g>
+<rect x="198" y="344" width="244" height="30" rx="15" fill="#FFFFFF"/>
+<text x="320" y="364" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="13" fill="#183FBA" letter-spacing="1.5">RGPD ET CONSENTEMENT</text>
+</svg>

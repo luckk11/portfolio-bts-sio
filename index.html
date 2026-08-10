@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luc Zhang — BTS SIO option SLAM · Back-end, données et IA</title>
+<meta name="description" content="Étudiant en 2e année de BTS SIO option SLAM à l'ENC Bessières. Stage en ingénierie des données chez ZENG Expertise : Python, PostgreSQL, architecture RAG. En recherche d'alternance.">
+<meta property="og:title" content="Luc Zhang — BTS SIO option SLAM">
+<meta property="og:description" content="Back-end, bases de données et intelligence artificielle. Portfolio BTS SIO.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" id="progress"></div>
+
+<!-- ================= HEADER ================= -->
+<!-- #header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <nav class="navpill" id="nav" aria-label="Navigation principale">
+      <a class="logo" href="#top">LZ</a>
+      <a class="nl" href="#top" aria-current="page">Accueil</a>
+      <a class="nl" href="profil.html">Profil</a>
+      <a class="nl" href="bts-sio.html">BTS SIO</a>
+      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="stage-1.html">Stage</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="stage-1.html">1<sup>re</sup> année<span>ZENG Expertise — effectué</span></a>
+          <a href="stage-2.html">2<sup>e</sup> année<span>À venir</span></a>
+        </div>
+      </div>
+      <a class="nl" href="projets.html">Projets</a>
+      <a class="nl" href="veille.html">Veille</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <!-- version anglaise à produire : index-en.html -->
+      <a class="icon-btn" href="index-en.html" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="icon-btn" id="theme" aria-label="Basculer le thème sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a class="btn btn-deep" href="contact.html">Contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /#header -->
+
+<main id="main">
+
+<!-- ================= 01 · HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <span class="hero-tag rv"><span class="dot"></span> En recherche d'alternance et de stage — 2<sup>e</sup> année</span>
+    <h1 class="welcome rv">
+      <span class="w1">Bienvenue<span class="pill" aria-hidden="true"></span></span>
+      <span class="w2">sur mon portfolio</span>
+    </h1>
+    <p class="hero-name mono rv">Luc Zhang — BTS SIO option SLAM</p>
+  </div>
+  <div class="hero-bar">
+    <div class="wrap hero-bar-in">
+      <!-- Phrase d'accroche : proposition, à valider ou à remplacer -->
+      <p class="rv">Back-end, bases de données et intelligence artificielle. Cinq semaines passées chez un cabinet de <strong>Data Engineering</strong> à construire un moteur d'analyse en Python, PostgreSQL et RAG — et l'envie d'aller vers la data.</p>
+      <div class="hero-actions rv">
+        <a class="btn btn-deep" href="#stage">Voir mon stage
+          <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        <a class="btn btn-soft" href="assets/docs/cv-luc-zhang.pdf" download>Télécharger le CV
+          <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v12M7 12l5 5 5-5M5 20h14"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 · EN BREF ================= -->
+<section class="sec wrap" id="apropos">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(01) — En bref</span>
+    <h2>Le développement comme outil,<br>la donnée comme objectif.</h2>
+  </div>
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">Après une première année de licence d'informatique puis un passage en MIASHS, le choix s'est porté sur le BTS SIO option SLAM, à l'École Nationale de Commerce de Paris — une formation plus proche du terrain et du code produit.</p>
+      <p class="lead" style="margin-top:18px">La direction, elle, est fixée depuis un moment : l'ingénierie des données. Le stage de première année chez ZENG Expertise, un cabinet spécialisé en Data Engineering et en IA, a confirmé ce cap. Objectif à moyen terme : Data Analyst, puis Data Scientist.</p>
+      <div class="grid-3" style="margin-top:38px;gap:16px">
+        <div class="stat"><b class="count" data-to="200" data-suffix=" h">0</b><span>en entreprise</span></div>
+        <div class="stat"><b class="count" data-to="4" data-suffix="">0</b><span>langages en production</span></div>
+        <div class="stat"><b class="count" data-to="2" data-suffix="">0</b><span>certifications</span></div>
+      </div>
+    </div>
+    <aside class="card idcard rv">
+      <span class="mono" style="color:var(--sec)">Carte d'identité</span>
+      <dl style="margin-top:18px">
+        <dt>Formation</dt><dd>BTS SIO — option SLAM</dd>
+        <dt>Promotion</dt><dd>2025 — 2027</dd>
+        <dt>Établissement</dt><dd>ENC Bessières, Paris 17<sup>e</sup></dd>
+        <dt>Statut</dt><dd>Initial, ouvert à l'alternance</dd>
+        <dt>Ville</dt><dd>Rosny-sous-Bois (93)</dd>
+        <dt>Mobilité</dt><dd>Paris et Île-de-France</dd>
+        <dt>Langues</dt><dd>FR natif · ZH bilingue<br>EN B2+ · ES notions</dd>
+      </dl>
+      <div style="margin-top:22px;padding-top:20px;border-top:1px solid var(--line)">
+        <a class="link" href="profil.html">Le parcours en détail
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= 03 · COMPÉTENCES ================= -->
+<section class="sec wrap" id="competences" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(02) — Compétences</span>
+    <h2>Ce qui a déjà servi<br>sur un vrai projet.</h2>
+  </div>
+
+  <div class="acc rv" id="acc-comp">
+    <div class="acc-item open">
+      <button class="acc-btn" aria-expanded="true">
+        <span class="num">01</span><h3>Back-end et traitement de données</h3>
+        <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></span>
+      </button>
+      <div class="acc-panel"><div><div class="acc-body">
+        Développement d'un pipeline ETL en Python : exploration de fichiers JSON, extraction, nettoyage puis chargement en base. Intégration d'API d'intelligence artificielle pour la génération d'embeddings vectoriels, et construction d'un moteur de recherche hybride combinant recherche classique et recherche sémantique.
+        <div class="gauge" aria-label="Niveau 3 sur 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <span class="chip">Python</span><span class="chip">ETL</span><span class="chip">API REST</span><span class="chip">RAG</span><span class="chip">Embeddings</span>
+      </div></div></div>
+    </div>
+
+    <div class="acc-item">
+      <button class="acc-btn" aria-expanded="false">
+        <span class="num">02</span><h3>Bases de données</h3>
+        <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></span>
+      </button>
+      <div class="acc-panel"><div><div class="acc-body">
+        Conception d'un schéma PostgreSQL à partir de données brutes non structurées, écriture des requêtes d'exploitation, puis optimisation par les index. Stockage de vecteurs avec l'extension pgvector. En formation : modélisation et MySQL.
+        <div class="gauge" aria-label="Niveau 3 sur 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">Indexation</span>
+      </div></div></div>
+    </div>
+
+    <div class="acc-item">
+      <button class="acc-btn" aria-expanded="false">
+        <span class="num">03</span><h3>Développement web et logiciel</h3>
+        <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></span>
+      </button>
+      <div class="acc-panel"><div><div class="acc-body">
+        Programmation web côté client et serveur, et pratique de plusieurs langages en formation comme en projet personnel. Ce site en fait partie : il est écrit à la main, sans framework ni générateur.
+        <div class="gauge" aria-label="Niveau 2 sur 4"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">PHP</span><span class="chip">Java</span><span class="chip">C</span><span class="chip">Bash</span>
+      </div></div></div>
+    </div>
+
+    <div class="acc-item">
+      <button class="acc-btn" aria-expanded="false">
+        <span class="num">04</span><h3>Méthodes et travail en équipe</h3>
+        <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg></span>
+      </button>
+      <div class="acc-panel"><div><div class="acc-body">
+        Développement organisé par vagues, un ticket par évolution, un point quotidien avec le tuteur. Application du principe de responsabilité unique, sécurisation des clés d'API par fichiers d'environnement, rédaction systématique d'un guide utilisateur et d'une documentation technique. Lecture et application de documentations techniques en anglais.
+        <div class="gauge" aria-label="Niveau 3 sur 4"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+        <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Documentation</span><span class="chip">Anglais technique</span>
+      </div></div></div>
+    </div>
+  </div>
+
+  <div class="rv" style="margin-top:34px">
+    <a class="link" href="competences.html">Le tableau de synthèse du référentiel et les preuves associées
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+  </div>
+</section>
+
+<!-- ================= 04 · PARCOURS ================= -->
+<section class="sec band" id="parcours">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="mono" style="display:block;margin-bottom:18px">(03) — Parcours</span>
+      <h2>Un cap tenu, une trajectoire ajustée.</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl rv"><em>2024</em><b>Baccalauréat général</b><span>Spécialités mathématiques et physique, option maths expertes</span><span>Lycée Charles de Gaulle, Rosny-sous-Bois — mention assez bien</span></div>
+      <div class="tl rv"><em>2024 — 2025</em><b>Licence informatique</b><span>Université Paris 8, puis MIASHS à Gustave Eiffel</span><span>Réorientation vers une formation plus appliquée</span></div>
+      <div class="tl rv"><em>Depuis nov. 2025</em><b>BTS SIO — SLAM</b><span>École Nationale de Commerce, Paris 17<sup>e</sup></span><span>Entrée en 2<sup>e</sup> année</span></div>
+      <div class="tl rv"><em>Objectif 2027</em><b>Licence pro ou école</b><span>Puis Data Analyst, et Data Scientist en IA</span><span>Alternance recherchée dès maintenant</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 · STAGE ================= -->
+<section class="sec wrap" id="stage">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(04) — Stage de 1<sup>re</sup> année</span>
+    <h2>Cinq semaines dans un cabinet<br>de Data Engineering.</h2>
+  </div>
+
+  <article class="card stage rv">
+    <div class="stage-media">
+      <div class="logo-box"><img src="assets/img/logo-zeng.png" alt="Logo de ZENG Expertise" width="132"></div>
+      <dl>
+        <dt>Entreprise</dt><dd>ZENG Expertise (SASU)</dd>
+        <dt>Lieu</dt><dd>Lyon 6<sup>e</sup> — en distanciel</dd>
+        <dt>Secteur</dt><dd>Ingénierie des données et IA</dd>
+        <dt>Clientèle</dt><dd>Banque et finance</dd>
+        <dt>Encadrement</dt><dd>Le dirigeant, consultant data senior</dd>
+        <dt>Période</dt><dd>4 mai → 5 juin 2026</dd>
+        <dt>Durée</dt><dd>5 semaines · 200 heures</dd>
+      </dl>
+    </div>
+    <div class="stage-body">
+      <span class="badge badge-ok">Effectué</span>
+      <h3>Conception et développement back-end d'un moteur d'analyse de données crypto</h3>
+      <span class="mono" style="color:var(--sec)">Assistant développeur data &amp; back-end</span>
+      <p class="lead" style="font-size:16px;margin-top:16px">Une preuve de concept destinée à devenir un service du cabinet : analyser des données de cryptomonnaies à partir d'articles et d'historiques de marché, en s'appuyant sur une <strong>architecture RAG</strong>. Sur demande du tuteur, la mission s'est progressivement recentrée sur cette brique IA, devenue la spécialité de terrain de ce stage.</p>
+      <ul class="mlist">
+        <li><b>Architecture RAG</b> — chaîne complète de récupération augmentée : indexation des sources, recherche du contexte pertinent, puis appel du modèle de langage pour produire l'analyse</li>
+        <li><b>Génération d'embeddings</b> — intégration d'une API d'IA et stockage vectoriel avec pgvector</li>
+        <li><b>Moteur de recherche hybride</b> — combinaison de la recherche classique et de la recherche sémantique</li>
+        <li><b>Conception du schéma SQL</b> — analyse de la structure des fichiers JSON via un script Python, puis modélisation de la base PostgreSQL</li>
+        <li><b>Pipeline ETL</b> — automatisation de l'extraction, du traitement et du chargement des données de marché</li>
+        <li><b>Optimisation des index</b> — réduction des temps de réponse sur les requêtes d'exploitation</li>
+        <li><b>Documentation technique</b> — guide utilisateur et documentation développeur pour chaque fonctionnalité</li>
+      </ul>
+      <div style="margin-top:20px">
+        <span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span><span class="chip">Tailscale</span><span class="chip">Raspberry Pi</span>
+      </div>
+      <div style="margin-top:16px">
+        <span class="mono" style="color:var(--sec)">Compétences du référentiel mobilisées</span><br>
+        <span class="chip chip-n" style="margin-top:8px">Gérer les données</span><span class="chip chip-n">Concevoir et développer une solution applicative</span><span class="chip chip-n">Travailler en mode projet</span><span class="chip chip-n">Organiser son développement professionnel</span>
+      </div>
+      <div class="docs">
+        <a class="doc" href="assets/docs/rapport-de-stage.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:17px;height:17px"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          Rapport de stage</a>
+        <a class="doc" href="assets/docs/attestation-de-stage.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:17px;height:17px"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          Attestation</a>
+        <a class="doc" href="stage-1.html">Le détail complet</a>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= 06 · PROJET EN VEDETTE ================= -->
+<section class="sec wrap" id="projet" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(05) — Projet en vedette</span>
+    <h2>Crypto Anomaly Analyser.</h2>
+    <p class="lead" style="margin-top:16px">
+      Le projet mené chez ZENG Expertise, poursuivi au-delà des cinq semaines de stage : le chantier était trop lourd pour tenir dans la durée impartie. Un tableau de bord qui surveille le cours du Bitcoin en continu, détecte les mouvements de prix statistiquement anormaux, puis cherche dans l'actualité s'il existe une explication à ce mouvement.
+    </p>
+  </div>
+
+  <article class="feat rv">
+    <div class="feat-media">
+      <img src="assets/img/crypto-dashboard.jpg" alt="Tableau de bord Crypto Anomaly Analyser : graphique du cours du Bitcoin sur 24 heures avec une zone d'anomalie signalée" loading="lazy">
+    </div>
+    <div class="feat-body">
+      <div>
+        <h3>Détecter l'anomalie, puis l'expliquer</h3>
+        <p class="lead" style="font-size:16px">
+          Le prix est échantillonné en bougies de 5 minutes. Un score statistique mesure l'écart à la normale sur 24 heures ; au-delà d'un seuil, un épisode est ouvert. Le système croise alors les titres d'actualité de la période pour trancher entre <em>expliqué par une actualité</em> et <em>marché normal, sans cause identifiée</em>. Chaque épisode est archivé et rejouable.
+        </p>
+        <div style="margin-top:18px">
+          <span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">pgvector</span><span class="chip">RAG</span><span class="chip">API de marché</span><span class="chip">Analyse statistique</span><span class="chip">Flux d'actualités</span>
+        </div>
+        <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-deep" href="projets.html">En savoir plus
+            <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+          <a class="btn btn-soft" href="https://github.com/Zeng-Zer/crypto-analyser" rel="noopener">Code sur GitHub
+            <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        </div>
+      </div>
+      <div>
+        <span class="mono" style="color:var(--sec)">Ce que la page projet contient</span>
+        <ul class="mlist" style="margin-top:12px">
+          <li>Le détecteur d'anomalies et ses seuils</li>
+          <li>L'historique rejouable des épisodes</li>
+          <li>Les autres réalisations, scolaires et personnelles</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <div class="shots rv" style="margin-top:20px">
+    <img src="assets/img/crypto-detector.jpg" alt="Détecteur d'anomalies de prix, activité de marché et historique des épisodes détectés" loading="lazy">
+    <div class="card" style="display:flex;flex-direction:column;justify-content:center">
+      <span class="mono" style="color:var(--sec)">Autres réalisations</span>
+      <ul class="mlist" style="margin-top:14px">
+        <li>Application de recommandation de livres — projet universitaire en Python, en équipe</li>
+        <li>Site de vente de hangboards et de poignées de traction</li>
+        <li>Site vitrine pour un commerce</li>
+        <li>Application fitness</li>
+      </ul>
+      <div style="margin-top:18px">
+        <a class="link" href="projets.html">Voir tous les projets
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 · RECHERCHE ================= -->
+<section class="sec band" id="recherche">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap">
+    <div class="rv" style="max-width:62ch">
+      <span class="mono" style="display:block;margin-bottom:16px">(06) — Deuxième année</span>
+      <h2 style="font-size:clamp(28px,4vw,46px)">Alternance ou stage, à partir de la rentrée.</h2>
+      <p class="lead" style="margin-top:16px">
+        Recherche en cours pour la deuxième année de BTS, en développement back-end, données ou IA.
+        Période et durée du stage : <span class="todo" style="background:rgba(255,255,255,.16);color:#fff">à préciser</span>.
+      </p>
+    </div>
+    <a class="btn btn-ghost rv" href="contact.html">Échanger
+      <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+  </div>
+</section>
+
+<!-- ================= 08 · VEILLE ================= -->
+<section class="sec wrap" id="veille">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(07) — Veille technologique</span>
+    <h2>Comment l'IA utilise nos données<br>pour choisir à notre place.</h2>
+    <p class="lead" style="margin-top:16px">Les données personnelles valent de l'or, et nos décisions quotidiennes servent de matière première aux algorithmes. Cette veille suit la manière dont les systèmes de recommandation et les modèles d'IA exploitent ces traces — souvent sans que l'utilisateur en ait conscience.</p>
+  </div>
+  <div class="grid-3">
+    <article class="axe rv">
+      <img src="assets/img/veille-1.svg" alt="Des traces numériques dispersées convergent vers une base de données" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 01</span>
+        <h3>Collecte et traçage</h3>
+        <p>Ce qui est réellement capté, par qui, et sous quel prétexte.</p>
+      </div>
+    </article>
+    <article class="axe rv">
+      <img src="assets/img/veille-2.svg" alt="Une carte mise en avant par un algorithme oriente le choix de l'utilisateur" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 02</span>
+        <h3>Recommandation et influence</h3>
+        <p>Comment un modèle oriente un choix sans jamais l'annoncer.</p>
+      </div>
+    </article>
+    <article class="axe rv">
+      <img src="assets/img/veille-3.svg" alt="Un bouclier protège un document de données personnelles" loading="lazy">
+      <div class="axe-body">
+        <span class="mono" style="color:var(--deep)">Axe 03</span>
+        <h3>Cadre juridique</h3>
+        <p>RGPD, consentement, et ce que la réglementation ne couvre pas encore.</p>
+      </div>
+    </article>
+  </div>
+  <div class="rv" style="margin-top:26px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+    <a class="btn btn-soft" href="https://www.pearltrees.com/lucque" rel="noopener" id="pearltrees">Ma collection Pearltrees
+      <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    
+  </div>
+</section>
+
+<!-- ================= 09 · CERTIFICATIONS ================= -->
+<section class="sec wrap" id="certifications" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(08) — Certifications</span>
+    <h2>Ce qui est validé.</h2>
+  </div>
+  <div class="certs">
+    <div class="cert rv"><span class="sq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:21px;height:21px"><path d="M12 3l8 4v5c0 4.4-3.4 7.9-8 9-4.6-1.1-8-4.6-8-9V7z"/></svg></span>
+      <span><b>MOOC de l'ANSSI — RGPD</b><span>ANSSI · 2026</span></span></div>
+    <div class="cert rv"><span class="sq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:21px;height:21px"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/></svg></span>
+      <span><b>Relational Database</b><span>freeCodeCamp · 2026</span></span></div>
+    <div class="cert rv"><span class="sq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:21px;height:21px"><circle cx="12" cy="9" r="5"/><path d="M8 13l-2 8 6-3 6 3-2-8"/></svg></span>
+      <span><b>PIX — 509 points</b><span>Certification en cours de progression</span></span></div>
+  </div>
+  <div class="bandeau rv">
+    <span class="sq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:19px;height:19px"><path d="M12 4v16M4 12h16"/></svg></span>
+    <p><b>En cours.</b> Objectif de l'année : compléter les certifications fondamentales de freeCodeCamp, en priorité celles liées aux bases de données et au back-end, dans le prolongement direct du travail mené sur PostgreSQL pendant le stage. Le MOOC de l'ANSSI sur le RGPD alimente par ailleurs la veille technologique, dont le sujet porte précisément sur l'exploitation des données personnelles.</p>
+  </div>
+</section>
+
+<!-- ================= 10 · CTA FINAL ================= -->
+<section class="wrap" style="padding-bottom:clamp(40px,6vw,80px)">
+  <div class="cta rv">
+    <span class="mono" style="color:var(--pale)">(09) — Contact</span>
+    <h2 style="margin-top:20px">Un projet <em>data</em> ?</h2>
+    <a class="mail" href="mailto:zhg.luc2909@gmail.com">zhg.luc2909@gmail.com</a>
+    <div style="margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="contact.html">Formulaire de contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <a class="btn btn-ghost" href="assets/docs/cv-luc-zhang.pdf" download>Le CV en PDF
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 4v12M7 12l5 5 5-5M5 20h14"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<!-- #footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--deep)">LZ</span>
+        <p style="font-size:15.5px;color:var(--sec);margin-top:6px">Luc Zhang — BTS SIO option SLAM<br>Rosny-sous-Bois, Île-de-France</p>
+      </div>
+      <nav aria-label="Pages du site">
+        <a href="profil.html">Profil</a>
+        <a href="bts-sio.html">BTS SIO</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stage-1.html">Stage</a>
+        <a href="projets.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/luczhang8/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/luckk11" rel="noopener">GitHub</a>
+        <a href="https://www.pearltrees.com/lucque" rel="noopener">Pearltrees</a>
+        <a href="mailto:zhg.luc2909@gmail.com">E-mail</a>
+      </nav>
+    </div>
+    <div class="ft-in ft-bot">
+      <span>Dernière mise à jour : août 2026 — site écrit à la main en HTML, CSS et JavaScript, hébergé sur GitHub Pages</span>
+      <nav aria-label="Pages annexes">
+        <a href="a-propos.html">À propos du site</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /#footer -->
+
+<!-- Statistiques de visite : coller ici le script (Plausible, GoatCounter…) une fois le service choisi -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

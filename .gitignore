@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+
+# éditeurs
+.vscode/
+.idea/
+*.swp
+
+# fichiers temporaires
+*.tmp
+*.log
+__pycache__/
