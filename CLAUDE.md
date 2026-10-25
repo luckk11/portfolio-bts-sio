@@ -10,8 +10,9 @@ Lis ce fichier avant de modifier quoi que ce soit.
 Portfolio d'un étudiant en **2ᵉ année de BTS SIO option SLAM** à l'ENC Bessières (Paris 17ᵉ).
 Il sert de support à l'**épreuve E5**, dont le tableau de synthèse porte l'adresse du site en en-tête.
 
-- **Échéance : 1ᵉʳ septembre 2026.**
-- Hébergement prévu : GitHub Pages.
+- **Échéance : 2 novembre 2026.**
+- Dépôt : `https://github.com/luckk11/portfolio-bts-sio` — public.
+- Hébergement : GitHub Pages, adresse `https://luckk11.github.io/portfolio-bts-sio/`.
 - Site **statique**, écrit à la main : aucun framework, aucun générateur, aucune dépendance npm.
 - Seule ressource externe : les polices Google Fonts.
 
@@ -82,6 +83,8 @@ Un thème sombre existe via `[data-theme="dark"]`. **Toute nouvelle couleur doit
 
 **Typographie.** Poppins pour les titres, Inter pour le corps, JetBrains Mono pour les étiquettes.
 **Aucun texte sous 15 px**, sauf les étiquettes en monospace (11 à 13 px) qui sont décoratives. Cette règle vient d'un retour explicite : les petits gris étaient illisibles.
+
+**Verre liquide.** Une couche translucide a été ajoutée en septembre et validée en octobre : nappes de couleur floutées en fond de page, `backdrop-filter` sur la navigation, les cartes, les boutons et les pastilles. Elle vit dans la section 14 de `style.css` et dans les variables `--glass-*` et `--blob-*`. Deux points de vigilance : le contraste du texte secondaire au-dessus des nappes animées, et le coût de rendu sur machine modeste.
 
 **Interdits.**
 - Pas de bandeau défilant (marquee) — refusé explicitement.

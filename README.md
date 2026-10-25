@@ -81,19 +81,24 @@ Tant que l'identifiant n'est pas renseigné, le formulaire ouvre automatiquement
 
 ---
 
-## Publier sur GitHub Pages
+## Publier
+
+Le dépôt est en place : [github.com/luckk11/portfolio-bts-sio](https://github.com/luckk11/portfolio-bts-sio).
+
+Pour envoyer les modifications :
 
 ```bash
-git init
+python3 _outils/verifier.py
 git add .
-git commit -m "Première version du portfolio"
-git branch -M main
-git remote add origin https://github.com/luckk11/NOM-DU-DEPOT.git
-git push -u origin main
+git commit -m "Décris ce que tu as fait"
+git push
 ```
 
-Puis, sur GitHub : **Settings → Pages → Source : Deploy from a branch → main / (root)**.
-Le site est en ligne quelques minutes plus tard à l'adresse `https://luckk11.github.io/NOM-DU-DEPOT/`.
+**Activer GitHub Pages**, une seule fois : sur le dépôt, **Settings → Pages → Source : Deploy from a branch → main / (root) → Save**.
+
+Le site est ensuite en ligne à l'adresse `https://luckk11.github.io/portfolio-bts-sio/`, et chaque `git push` le met à jour quelques minutes plus tard.
+
+C'est cette adresse qui figure en en-tête du tableau de synthèse de l'épreuve E5.
 
 ---
 
