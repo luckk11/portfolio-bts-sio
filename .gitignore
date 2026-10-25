@@ -11,3 +11,6 @@
 *.tmp
 *.log
 __pycache__/
+
+# Claude Code (configuration locale)
+.claude/

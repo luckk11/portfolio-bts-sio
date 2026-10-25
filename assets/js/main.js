@@ -1,6 +1,13 @@
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* nappes de fond du verre liquide */
+  var blobs = document.createElement('div');
+  blobs.className = 'blobs';
+  blobs.setAttribute('aria-hidden', 'true');
+  blobs.innerHTML = '<span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>';
+  document.body.insertBefore(blobs, document.body.firstChild);
+
   /* thème sombre, mémorisé */
   var root = document.documentElement, tBtn = document.getElementById('theme');
   try{
