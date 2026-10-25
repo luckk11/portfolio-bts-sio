@@ -47,7 +47,7 @@ p{margin:0}
 .mono{font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.09em;font-size:12.5px}
 .eyebrow{color:var(--deep);margin-bottom:18px;display:block}
 .lead{color:var(--sec);font-size:18px;max-width:64ch}
-.sec{padding:clamp(64px,9vw,120px) 0}
+.sec{padding-block:clamp(64px,9vw,120px)}
 .sec-head{margin-bottom:clamp(32px,5vw,56px)}
 .sec-head h2{font-size:clamp(30px,4.4vw,54px)}
 .skip{position:absolute;left:-9999px}
