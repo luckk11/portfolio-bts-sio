@@ -10,7 +10,6 @@
   --todo:#7A3FBF; --todo-bg:#F1EAFB;
   --sky:radial-gradient(120% 85% at 50% 0%,#FFFFFF 0%,rgba(255,255,255,0) 58%),
         linear-gradient(180deg,#4776F5 0%,#7CA0F8 26%,#FFFFFF 58%);
-  --grid:rgba(216,227,252,.9);
   --r:16px; --r-lg:24px;
   --pad:clamp(20px,5vw,72px);
   --ease:cubic-bezier(.2,.7,.3,1);
@@ -27,7 +26,6 @@
   --todo:#C4A2F0; --todo-bg:#2A1E3E;
   --sky:radial-gradient(120% 85% at 50% 0%,rgba(11,16,32,.2) 0%,rgba(11,16,32,0) 55%),
         linear-gradient(180deg,#1B3A93 0%,#152657 30%,#0B1020 62%);
-  --grid:rgba(70,96,160,.35);
   --glass-bg:rgba(20,28,54,.46); --glass-hi:rgba(255,255,255,.16); --glass-border:rgba(255,255,255,.13);
   --glass-shadow:0 10px 40px rgba(0,0,0,.5),0 2px 10px rgba(0,0,0,.3);
   --blob-a:#4776F5; --blob-b:#1B3A93; --blob-c:#8FB2F0;
@@ -95,7 +93,6 @@ p{margin:0}
    5. HERO
    ============================================================ */
 .hero{position:relative;background:var(--sky);margin-top:-84px;padding-top:104px;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 calc(16.666% - 1px),var(--grid) calc(16.666% - 1px) 16.666%)}
 .hero-in{position:relative;z-index:1;text-align:center;padding:clamp(28px,6vw,64px) 0 0}
 .hero-tag{display:inline-flex;align-items:center;gap:9px;background:var(--card);border-radius:999px;padding:9px 20px;font-size:15px;color:var(--ink);border:1px solid var(--line)}
 .dot{width:8px;height:8px;border-radius:999px;background:var(--ok);flex:none;position:relative}
@@ -246,7 +243,6 @@ p{margin:0}
   .burger{display:grid}
   .navpill.open{position:absolute;top:74px;left:var(--pad);right:var(--pad);flex-direction:column;align-items:stretch;border-radius:var(--r-lg);padding:12px}
   .navpill.open .nl{display:block}
-  .hero::after{background:repeating-linear-gradient(90deg,transparent 0 calc(33.333% - 1px),var(--grid) calc(33.333% - 1px) 33.333%)}
   .acc-body{padding-left:4px}
   .hdr{position:relative}
   .hero{margin-top:0;padding-top:24px}
@@ -261,7 +257,6 @@ p{margin:0}
    9. PAGES INTERNES
    ============================================================ */
 .pagehead{position:relative;background:var(--sky);margin-top:-84px;padding:104px 0 clamp(38px,5vw,72px);overflow:hidden}
-.pagehead::after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 calc(16.666% - 1px),var(--grid) calc(16.666% - 1px) 16.666%)}
 .pagehead .wrap{position:relative;z-index:1}
 .bread{color:var(--deep)}
 .bread a{text-decoration:none}
