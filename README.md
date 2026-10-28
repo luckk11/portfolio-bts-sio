@@ -102,6 +102,27 @@ C'est cette adresse qui figure en en-tête du tableau de synthèse de l'épreuve
 
 ---
 
+## Ajouter un justificatif de certification
+
+Sur `certifications.html`, chaque certification a un cadre à gauche, aujourd'hui marqué « photo du certificat à ajouter ».
+
+1. Déposer l'image dans `assets/img/` (JPG, moins de 400 ko : `verifier.py` signale les images plus lourdes).
+2. Dans le bloc `.stage-media` de la certification, remplacer la ligne `<div class="certimg certimg-vide">…</div>` par :
+
+```html
+<a class="certimg" href="assets/img/certif-xxx.jpg" target="_blank" rel="noopener"
+   aria-label="Ouvrir le justificatif en grand, dans un nouvel onglet">
+  <img src="assets/img/certif-xxx.jpg" alt="Justificatif : nom de la certification" loading="lazy">
+</a>
+<span class="certcap">Cliquer pour ouvrir en grand</span>
+```
+
+3. Lancer `python3 _outils/verifier.py`.
+
+`target="_blank"` ouvre l'image dans un nouvel onglet ; `rel="noopener"` empêche cet onglet d'agir sur la page d'origine.
+
+---
+
 ## Accessibilité
 
 Contraste conforme au niveau AA, navigation au clavier complète, lien d'évitement, textes alternatifs sur toutes les images, structure sémantique, et désactivation des animations si le système le demande (`prefers-reduced-motion`).
