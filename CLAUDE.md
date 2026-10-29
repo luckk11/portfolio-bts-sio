@@ -137,7 +137,7 @@ Animations : ajouter la classe `.rv` à un élément suffit pour qu'il apparaiss
 
 **Certifications.** MOOC ANSSI sur le RGPD (2026), freeCodeCamp Relational Database (2026), PIX 509 points.
 
-**Veille.** « Comment l'IA utilise nos données pour choisir à notre place sans que nous en ayons conscience. » Collection publique : `https://www.pearltrees.com/lucque`. Trois axes : collecte et traçage, recommandation et influence, cadre juridique.
+**Veille.** « Comment l'IA utilise nos données pour choisir à notre place sans que nous en ayons conscience. » Collection publique : `https://www.pearltrees.com/lucque`. Trois axes : collecte et traçage, recommandation et influence, cadre juridique. Suivie **depuis mai 2026**. Sources : recherches Google, une liste X avec notifications, YouTube. Outil principal : Pearltrees. Rythme (déclaré par Luc) : au fil des notifications et des articles ou vidéos repérés pendant le temps libre et les pauses, pas de fréquence fixe pour le moment. Non confirmé : que la collection soit classée par axe, avec date des liens.
 
 **Épreuves.** Coefficient total 25, dont 12 sur E4, E5 et E6 *(à confirmer, voir §9)*. Les durées et les intitulés des épreuves **ne sont pas vérifiés** : ne pas les présenter comme un fait.
 
