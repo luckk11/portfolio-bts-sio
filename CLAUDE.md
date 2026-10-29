@@ -139,7 +139,7 @@ Animations : ajouter la classe `.rv` à un élément suffit pour qu'il apparaiss
 
 **Veille.** « Comment l'IA utilise nos données pour choisir à notre place sans que nous en ayons conscience. » Collection publique : `https://www.pearltrees.com/lucque`. Trois axes : collecte et traçage, recommandation et influence, cadre juridique.
 
-**Épreuves.** Coefficient total 25, dont 12 sur E4, E5 et E6. E5 est un oral de 40 minutes avec 1 h 30 de préparation.
+**Épreuves.** Coefficient total 25, dont 12 sur E4, E5 et E6 *(à confirmer, voir §9)*. Les durées et les intitulés des épreuves **ne sont pas vérifiés** : ne pas les présenter comme un fait.
 
 ---
 
@@ -147,5 +147,24 @@ Animations : ajouter la classe `.rv` à un élément suffit pour qu'il apparaiss
 
 - Un commit par unité de sens, message en français à l'impératif : `Ajoute la page profil`, `Corrige le contraste du gris secondaire`.
 - Lancer `verifier.py` avant chaque commit.
-- Après toute modification du menu : `propager.py`, puis vérifier que les huit pages ont bien changé.
+- Après toute modification du menu : `propager.py`, puis vérifier que les treize pages ont bien changé.
 - Ne pas ajouter de dépendance. Si une bibliothèque semble nécessaire, en discuter d'abord — l'absence de dépendance est un argument à l'oral.
+
+---
+
+## 9. En attente — ne pas modifier avant confirmation
+
+État au 29 octobre 2026. Ces points reposent sur une information **incertaine** ; ils sont gelés volontairement.
+
+**Définition de l'épreuve E5.** Le fichier Excel officiel de Luc (gabarit « Annexe VI.1 », **session 2026**) porte sur l'E5 et reprend les six compétences du bloc « Support et mise à disposition de services informatiques », en trois rubriques : réalisations en cours de formation, en milieu professionnel en 1ʳᵉ année, en 2ᵉ année ; périodes au format JJ/MM/AA. Or `bts-sio.html` (tableau des épreuves, vers les lignes 255 à 294) donne E4 = Support et mise à disposition (40 min) et E5 = Conception et développement d'applications SLAM (40 min + 1 h 30). Cela peut être l'ancienne définition (arrêtés de 2024 modifiant celui du 29 avril 2019), ou une erreur. Durées, intitulés, nombre de réalisations attendu et session applicable à Luc (examen probablement en 2027) : **non confirmés**. Les documents SIEC n° 7 (déroulement de l'E5, .docx) et n° 11 (documents à fournir, PDF) n'ont pas pu être consultés.
+
+Gelé tant que Luc n'a pas rapporté les réponses de son professeur :
+- correction du tableau des épreuves de `bts-sio.html` ;
+- restructuration des preuves de `competences.html` selon les trois rubriques du tableau ;
+- brouillon du fichier Excel ;
+- rubrique « réalisations en cours de formation » ;
+- statut de « Recommandation de livres » (2024, avant le BTS) et des projets personnels ;
+- preuve de la compétence « présence en ligne de l'organisation » (un portfolio personnel est faible ici) ;
+- copie PDF de secours du site, selon l'accès de la commission.
+
+Questions à poser au professeur : intitulés et numéros des épreuves pour la session de Luc ; durée de l'oral et de la préparation ; nombre de réalisations, dont celles « en cours de formation » ; date et modalités de dépôt ; accès de la commission au site.
