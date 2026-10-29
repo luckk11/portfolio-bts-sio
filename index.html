@@ -26,7 +26,16 @@
       <a class="nl" href="#top" aria-current="page">Accueil</a>
       <a class="nl" href="profil.html">Profil</a>
       <a class="nl" href="bts-sio.html">BTS SIO</a>
-      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="competences.html">Compétences</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Compétences">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="competences.html">Référentiel<span>Les compétences et leurs preuves</span></a>
+          <a href="certifications.html">Certifications<span>ANSSI, freeCodeCamp, PIX</span></a>
+        </div>
+      </div>
       <div class="has-sub">
         <a class="nl nl-main" href="stage-1.html">Stage</a>
         <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
@@ -381,6 +390,10 @@
   <div class="bandeau rv">
     <span class="sq"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="width:19px;height:19px"><path d="M12 4v16M4 12h16"/></svg></span>
     <p><b>En cours.</b> Objectif de l'année : compléter les certifications fondamentales de freeCodeCamp, en priorité celles liées aux bases de données et au back-end, dans le prolongement direct du travail mené sur PostgreSQL pendant le stage. Le MOOC de l'ANSSI sur le RGPD alimente par ailleurs la veille technologique, dont le sujet porte précisément sur l'exploitation des données personnelles.</p>
+  </div>
+  <div class="rv" style="margin-top:26px">
+    <a class="link" href="certifications.html">Le détail des certifications et leurs justificatifs
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
   </div>
 </section>
 

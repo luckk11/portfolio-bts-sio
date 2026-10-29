@@ -349,9 +349,10 @@ p{margin:0}
 .sub a:hover span{color:var(--deep)}
 .sub a[aria-current="page"]{background:var(--surf);color:var(--deep)}
 .has-sub:has(a[aria-current="page"]) .nl-main{color:var(--deep);font-weight:500}
-/* menu burger : seuil mesuré. Le menu complet occupe 916 px (barre 705 + boutons 196 + écart 16) ;
-   avec 5 % de marge de chaque côté, il ne tient plus à marges égales sous 1018 px. */
-@media (max-width:1020px){
+/* menu burger : seuil mesuré. Le menu complet occupe 934 px (barre 722 + boutons 196 + écart 16) ;
+   avec 5 % de marge de chaque côté, il ne tient plus à marges égales sous 1037 px.
+   À recalculer si une entrée est ajoutée au menu : (barre + boutons + 16) / 0,9. */
+@media (max-width:1040px){
   .navpill .nl{display:none}
   .burger{display:grid}
   .navpill.open{position:absolute;top:74px;left:var(--pad);right:var(--pad);flex-direction:column;align-items:stretch;border-radius:var(--r-lg);padding:12px}
