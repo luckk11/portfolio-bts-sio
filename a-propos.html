@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos du site — Luc Zhang, BTS SIO option SLAM</title>
+<meta name="description" content="Comment ce portfolio est construit : HTML, CSS et JavaScript sans framework, hébergement GitHub Pages, deux scripts Python d'aide à la maintenance, accessibilité et direction visuelle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="progress" id="progress"></div>
+
+<!-- #header -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <nav class="navpill" id="nav" aria-label="Navigation principale">
+      <a class="logo" href="index.html">LZ</a>
+      <a class="nl" href="index.html">Accueil</a>
+      <a class="nl" href="profil.html">Profil</a>
+      <a class="nl" href="bts-sio.html">BTS SIO</a>
+      <a class="nl" href="competences.html">Compétences</a>
+      <div class="has-sub">
+        <a class="nl nl-main" href="stage-1.html">Stage</a>
+        <button class="nl-toggle" aria-expanded="false" aria-label="Ouvrir le sous-menu Stage">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="sub">
+          <a href="stage-1.html">1<sup>re</sup> année<span>ZENG Expertise — effectué</span></a>
+          <a href="stage-2.html">2<sup>e</sup> année<span>À venir</span></a>
+        </div>
+      </div>
+      <a class="nl" href="projets.html">Projets</a>
+      <a class="nl" href="veille.html">Veille</a>
+    </nav>
+    <div class="hdr-right">
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <!-- version anglaise à produire : index-en.html -->
+      <a class="icon-btn" href="index-en.html" hreflang="en" aria-label="Switch to English">EN</a>
+      <button class="icon-btn" id="theme" aria-label="Basculer le thème sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+      </button>
+      <a class="btn btn-deep" href="contact.html">Contact
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </div>
+</header>
+<!-- /#header -->
+
+<main id="main">
+
+<!-- ============ EN-TÊTE ============ -->
+<section class="pagehead">
+  <div class="wrap">
+    <p class="mono bread rv"><a href="index.html">Accueil</a> / À propos du site</p>
+    <h1 class="rv">À propos du site</h1>
+    <p class="sub rv">Pourquoi il existe, de quoi il est fait, et comment il est entretenu.</p>
+    <div class="meta rv">
+      <span>HTML, CSS, JavaScript</span>
+      <span>Aucun framework</span>
+      <span>Code public</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 · POURQUOI ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(01) — Pourquoi ce site</span>
+    <h2>Un portfolio qui sert de support<br>à l'épreuve E5.</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">Ce site rassemble ce qui est présenté à l'épreuve E5 du BTS SIO option SLAM : le parcours, le stage de première année chez ZENG Expertise, les projets, la veille technologique et les certifications.</p>
+      <p class="lead" style="margin-top:18px">Il s'adresse d'abord au jury du BTS, puis aux entreprises qui proposent un stage ou une alternance, puis aux écoles post-BTS.</p>
+    </div>
+    <aside class="note rv">
+      <b>Une adresse unique.</b> L'adresse du site figure en en-tête du tableau de synthèse de l'épreuve : c'est par elle que le jury accède à l'ensemble des preuves.
+    </aside>
+  </div>
+</section>
+
+<!-- ============ 02 · SOUS LE CAPOT ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(02) — Sous le capot</span>
+    <h2>Trois langages,<br>zéro dépendance.</h2>
+  </div>
+
+  <div class="grid-3">
+    <article class="card rv">
+      <span class="mono" style="color:var(--deep)">Langages</span>
+      <h3 style="margin:14px 0 10px;font-size:22px">Écrit directement</h3>
+      <p style="color:var(--sec);font-size:16px">HTML pour la structure, CSS pour la mise en forme, JavaScript pour les interactions : thème, menu, animations au défilement, formulaire.</p>
+      <div style="margin-top:16px"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+    </article>
+    <article class="card rv">
+      <span class="mono" style="color:var(--deep)">Dépendances</span>
+      <h3 style="margin:14px 0 10px;font-size:22px">Aucune</h3>
+      <p style="color:var(--sec);font-size:16px">Pas de framework, pas de générateur de site, pas de paquet npm. Une seule feuille de style, un seul script. La seule ressource externe est la police de caractères, chargée depuis Google Fonts.</p>
+    </article>
+    <article class="card rv">
+      <span class="mono" style="color:var(--deep)">Hébergement</span>
+      <h3 style="margin:14px 0 10px;font-size:22px">GitHub Pages</h3>
+      <p style="color:var(--sec);font-size:16px">Le site est servi à partir d'un dépôt public. Chaque modification poussée sur GitHub est publiée en une à deux minutes.</p>
+      <div style="margin-top:16px"><a class="link" href="https://github.com/luckk11/portfolio-bts-sio" rel="noopener">Voir le dépôt
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 03 · SCRIPTS ============ -->
+<section class="sec wrap" style="padding-top:0">
+    <div class="sec-head rv">
+      <span class="mono eyebrow">(03) — Deux scripts d'aide</span>
+      <h2>Écrire une fois,<br>vérifier avant de publier.</h2>
+      <p class="lead" style="margin-top:16px">Deux petits scripts Python servent à construire le site. Ils ne sont jamais exécutés dans le navigateur d'un visiteur.</p>
+    </div>
+
+    <div class="grid-2">
+      <article class="card rv">
+        <span class="mono" style="color:var(--deep)">_outils/propager.py</span>
+        <h3 style="margin:14px 0 10px;font-size:22px">Un menu, écrit une seule fois</h3>
+        <p style="color:var(--sec);font-size:16px">Le menu et le pied de page sont rédigés dans la page d'accueil. Le script les recopie dans toutes les autres pages et marque la page en cours dans le menu. Sans lui, chaque changement de menu demanderait de modifier tous les fichiers à la main.</p>
+      </article>
+      <article class="card rv">
+        <span class="mono" style="color:var(--deep)">_outils/verifier.py</span>
+        <h3 style="margin:14px 0 10px;font-size:22px">Un contrôle avant chaque publication</h3>
+        <p style="color:var(--sec);font-size:16px">Liens cassés, images sans texte alternatif, balises mal fermées, titre principal unique, identifiants en double, images trop lourdes. Il compte aussi les champs qui restent à compléter.</p>
+      </article>
+    </div>
+</section>
+
+<!-- ============ 04 · ACCESSIBILITÉ ============ -->
+<section class="sec wrap">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(04) — Accessibilité</span>
+    <h2>Lisible par tous,<br>au clavier comme à la souris.</h2>
+  </div>
+
+  <div class="grid-2">
+    <ul class="mlist rv" style="margin-top:0">
+      <li><b>Lien d'évitement</b> — « Aller au contenu » permet de passer le menu en navigation au clavier.</li>
+      <li><b>Structure sémantique</b> — en-tête, navigation, contenu principal et pied de page sont balisés comme tels, et le menu signale la page en cours.</li>
+      <li><b>Textes alternatifs</b> — chaque image en possède un, ce que vérifie le script de contrôle.</li>
+      <li><b>Focus visible</b> — l'élément atteint au clavier est entouré.</li>
+    </ul>
+    <ul class="mlist rv" style="margin-top:0">
+      <li><b>Thème clair ou sombre</b> — au choix du visiteur, mémorisé dans son navigateur.</li>
+      <li><b>Animations</b> — désactivées quand le système le demande (<span class="mono" style="font-size:13px">prefers-reduced-motion</span>).</li>
+      <li><b>Contrastes</b> — le texte principal bleu atteint 8,5 : 1 sur fond clair et le texte secondaire 7,6 : 1. La couleur vive, trop pâle pour du texte (4,1 : 1), est réservée aux aplats.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 05 · DIRECTION VISUELLE ============ -->
+<section class="sec wrap" style="padding-top:0">
+  <div class="sec-head rv">
+    <span class="mono eyebrow">(05) — Direction visuelle</span>
+    <h2>Des bleus, trois polices,<br>un peu de verre.</h2>
+  </div>
+
+  <div class="grid-2">
+    <div class="rv">
+      <p class="lead">La palette de bleus est définie une seule fois, en variables CSS : changer une couleur revient à modifier une ligne. Un thème sombre reprend les mêmes rôles avec d'autres valeurs.</p>
+      <p class="lead" style="margin-top:18px">Une couche translucide dite « verre liquide » donne du flou et de la transparence à la navigation, aux cartes et aux boutons, au-dessus de nappes de couleur qui dérivent lentement en arrière-plan.</p>
+    </div>
+    <aside class="card idcard rv">
+      <span class="mono" style="color:var(--sec)">Polices</span>
+      <dl style="margin-top:16px">
+        <dt>Titres</dt><dd>Poppins</dd>
+        <dt>Texte</dt><dd>Inter</dd>
+        <dt>Étiquettes</dt><dd>JetBrains Mono</dd>
+      </dl>
+      <p style="margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:15.5px;color:var(--sec)">Trois polices libres, chargées depuis Google Fonts.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="wrap" style="padding-bottom:clamp(40px,6vw,80px)">
+  <div class="cta rv">
+    <span class="mono" style="color:var(--pale)">Code source</span>
+    <h2 style="margin-top:20px">Le code est <em>public</em>.</h2>
+    <div style="margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="https://github.com/luckk11/portfolio-bts-sio" rel="noopener">Voir le dépôt GitHub
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+      <a class="btn btn-ghost" href="plan-du-site.html">Plan du site
+        <span class="cir"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- #footer -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-in">
+      <div>
+        <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;color:var(--deep)">LZ</span>
+        <p style="font-size:15.5px;color:var(--sec);margin-top:6px">Luc Zhang — BTS SIO option SLAM<br>Rosny-sous-Bois, Île-de-France</p>
+      </div>
+      <nav aria-label="Pages du site">
+        <a href="profil.html">Profil</a>
+        <a href="bts-sio.html">BTS SIO</a>
+        <a href="competences.html">Compétences</a>
+        <a href="stage-1.html">Stage</a>
+        <a href="projets.html">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/luczhang8/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/luckk11" rel="noopener">GitHub</a>
+        <a href="https://www.pearltrees.com/lucque" rel="noopener">Pearltrees</a>
+        <a href="mailto:zhg.luc2909@gmail.com">E-mail</a>
+      </nav>
+    </div>
+    <div class="ft-in ft-bot">
+      <span>Dernière mise à jour : août 2026 — site écrit à la main en HTML, CSS et JavaScript, hébergé sur GitHub Pages</span>
+      <nav aria-label="Pages annexes">
+        <a href="a-propos.html">À propos du site</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="plan-du-site.html">Plan du site</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /#footer -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

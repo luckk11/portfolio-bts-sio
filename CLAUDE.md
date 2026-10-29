@@ -84,7 +84,7 @@ Un thème sombre existe via `[data-theme="dark"]`. **Toute nouvelle couleur doit
 **Typographie.** Poppins pour les titres, Inter pour le corps, JetBrains Mono pour les étiquettes.
 **Aucun texte sous 15 px**, sauf les étiquettes en monospace (11 à 13 px) qui sont décoratives. Cette règle vient d'un retour explicite : les petits gris étaient illisibles.
 
-**Verre liquide.** Une couche translucide a été ajoutée en septembre et validée en octobre : nappes de couleur floutées en fond de page, `backdrop-filter` sur la navigation, les cartes, les boutons et les pastilles. Elle vit dans la section 14 de `style.css` et dans les variables `--glass-*` et `--blob-*`. Deux points de vigilance : le contraste du texte secondaire au-dessus des nappes animées, et le coût de rendu sur machine modeste.
+**Verre liquide.** Une couche translucide a été ajoutée en septembre et validée en octobre : nappes de couleur floutées en fond de page, `backdrop-filter` sur la navigation, les cartes, les boutons et les pastilles. Elle vit dans la section 14 de `style.css` et dans les variables `--glass-*` et `--blob-*`. Deux points de vigilance : le contraste du texte secondaire au-dessus des nappes animées, et le coût de rendu sur machine modeste. **Ne jamais placer de `.card` (ni de composant en verre) dans une `.band`** : en thème clair, le blanc translucide sur le bleu soutenu donne un fond lavande où le texte gris et le titre hérité en blanc deviennent illisibles.
 
 **Interdits.**
 - Pas de bandeau défilant (marquee) — refusé explicitement.
