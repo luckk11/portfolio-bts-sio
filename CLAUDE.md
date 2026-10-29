@@ -24,15 +24,18 @@ Public visé, par ordre de priorité : le jury BTS, les entreprises pour un stag
 
 ```
 index.html          Accueil — autosuffisant, reprend l'essentiel de tout le site
-profil.html         À PRODUIRE
+profil.html         Parcours, carte d'identité, cap, langues
 bts-sio.html        Le diplôme, les options, le programme, les épreuves
 competences.html    Référentiel, technologies, preuves
 stage-1.html        ZENG Expertise — effectué
 stage-2.html        À venir — coquille structurée
 projets.html        Crypto Analyser + autres réalisations
 veille.html         IA et données personnelles
+certifications.html MOOC ANSSI, freeCodeCamp, PIX
 contact.html        Formulaire + coordonnées
-_section-faq.html   Section retirée de l'accueil, conservée pour réemploi
+a-propos.html       Comment le site est construit
+mentions-legales.html  Éditeur, hébergement, données personnelles
+plan-du-site.html   Toutes les pages et leur contenu
 
 assets/css/style.css   toute la mise en forme
 assets/js/main.js      thème, menu, sous-menu, animations, formulaire
@@ -43,7 +46,9 @@ _outils/propager.py    recopie header + footer depuis index.html vers les autres
 _outils/verifier.py    contrôle liens morts, alt manquants, balises, poids des images
 ```
 
-Pages encore à produire : `profil.html`, `certifications.html`, `a-propos.html`, `mentions-legales.html`, `plan-du-site.html`, et la version anglaise `index-en.html`.
+Toutes les pages prévues existent. **Version anglaise abandonnée** (décision du 29 octobre 2026) : le bouton EN a été retiré du header et `index-en.html` n'est plus planifiée. Elle ne serait reprise qu'après l'échéance ; une page anglaise isolée, reliée à un site français, nuit plus qu'elle ne sert.
+
+Reste à faire : les champs `.todo` (voir §5) et les photos de justificatifs des certifications, mises de côté sur la branche locale `certifs-justificatifs`.
 
 ---
 

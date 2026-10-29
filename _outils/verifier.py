@@ -6,9 +6,8 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 pages = sorted(p for p in RACINE.glob('*.html') if not p.name.startswith('_'))
 
 # pages planifiées mais pas encore écrites : signalées en information, pas en alerte
-PREVUES = {'profil.html','bts-sio.html','projets.html','veille.html','certifications.html',
-           'contact.html','a-propos.html','mentions-legales.html','plan-du-site.html',
-           'index-en.html'}
+# (aucune pour le moment : toutes les pages existent, la version anglaise est abandonnée)
+PREVUES = set()
 
 alertes, infos, manquantes = [], [], set()
 
