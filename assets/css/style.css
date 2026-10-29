@@ -15,6 +15,7 @@
   --ease:cubic-bezier(.2,.7,.3,1);
   --glass-bg:rgba(255,255,255,.52); --glass-hi:rgba(255,255,255,.85); --glass-border:rgba(255,255,255,.65);
   --glass-shadow:0 10px 40px rgba(24,63,186,.16),0 2px 10px rgba(24,63,186,.08);
+  --glass-deep:80%; /* part de bleu du bouton .btn-deep : 80 % garde le texte blanc à 4,5:1 minimum sur fond blanc */
   --blob-a:#4776F5; --blob-b:#AECBF5; --blob-c:#183FBA;
 }
 [data-theme="dark"]{
@@ -28,6 +29,7 @@
         linear-gradient(180deg,#1B3A93 0%,#152657 30%,#0B1020 62%);
   --glass-bg:rgba(20,28,54,.46); --glass-hi:rgba(255,255,255,.16); --glass-border:rgba(255,255,255,.13);
   --glass-shadow:0 10px 40px rgba(0,0,0,.5),0 2px 10px rgba(0,0,0,.3);
+  --glass-deep:62%; /* en thème sombre le bleu est clair : le fonçage ferait baisser le contraste */
   --blob-a:#4776F5; --blob-b:#1B3A93; --blob-c:#8FB2F0;
 }
 
@@ -432,7 +434,7 @@ p{margin:0}
     box-shadow:var(--glass-shadow),inset 0 1px 0 var(--glass-hi);
   }
   .btn-deep{
-    background:radial-gradient(120% 160% at 12% -20%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%),color-mix(in srgb,var(--deep) 62%,transparent);
+    background:radial-gradient(120% 160% at 12% -20%,rgba(255,255,255,.35),rgba(255,255,255,0) 55%),color-mix(in srgb,var(--deep) var(--glass-deep),transparent);
     backdrop-filter:blur(18px) saturate(170%);
     -webkit-backdrop-filter:blur(18px) saturate(170%);
     border:1px solid rgba(255,255,255,.3);
